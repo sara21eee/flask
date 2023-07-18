@@ -154,4 +154,4 @@ def update_get_del(_id):
             return Response(response=json.dumps({"message": "Error occurred while deleting template"}),
                             status=500, mimetype="application/json")
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run(port='0.0.0.0', debug=False)
